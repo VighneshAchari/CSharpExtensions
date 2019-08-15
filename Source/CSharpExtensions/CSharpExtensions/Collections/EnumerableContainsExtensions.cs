@@ -28,7 +28,7 @@ namespace System.Collections.Generic
                 throw new ArgumentNullException("collection");
             }
 
-            return collection.Contains(value, StringComparer.InvariantCultureIgnoreCase);
+            return collection.Contains(value, StringComparer.OrdinalIgnoreCase);
         }
     }
 }

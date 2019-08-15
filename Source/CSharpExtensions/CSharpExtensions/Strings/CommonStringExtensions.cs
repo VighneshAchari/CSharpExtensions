@@ -31,7 +31,7 @@ namespace System
                 return false;
             }
 
-            return source.IndexOf(value, StringComparison.InvariantCultureIgnoreCase) > -1;
+            return source.IndexOf(value, StringComparison.OrdinalIgnoreCase) > -1;
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace System
         /// <param name="source">Source string</param>
         /// <param name="value">String to compare</param>
         /// <returns>Boolean value indicating if the two strings are same</returns>
-        public static bool EqualTo(this string source, string value)
+        public static bool IsEqualTo(this string source, string value)
         {
             if (source == null)
             {
@@ -52,7 +52,7 @@ namespace System
                 return false;
             }
 
-            return source.Equals(value, StringComparison.InvariantCultureIgnoreCase);
+            return source.Equals(value, StringComparison.OrdinalIgnoreCase);
         }
 
         /// <summary>
